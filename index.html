@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HelpDesk: Frontend</title>
+	<link rel="icon" href="/images/favicon.ico">
+<script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+<body>
+<header class="header">
+	<p>Домашнее задание к занятию "7. Работа с HTTP"</p>
+	<p>HelpDesk</p>
+</header>
+<div class="container">
+	<div class="ticket-box">
+		<div class="add-btn">
+			<input type="button" class="btn" value="Добавить тикет">
+		</div>
+		<ul class="tickets-list"></ul>
+	</div>
+	<div class="ticket-form-container hidden">
+		<form class="ticket-form">
+			<div class="ticket-form-header">Добавить тикет</div>
+			<div class="replace-form-header hidden">Изменить тикет</div>
+			<div class="ticket-delete-header hidden">Удалить тикер
+				<div class="ticket-delete-text">Вы уверены, что хотите удалить тикет? Это действие необратимо.</div>
+			</div>
+			<div class="short-description-container">
+				<label for="short" class="short-label">Краткое описание</label>
+				<input  class="short" id="short" name="short"  minlength="4" maxlength="30" size="10"/>
+			</div>
+			<div class="detailed-description-container short-description-container">
+				<label for="detailed" class="short-label">Подробное описание</label>
+				<input  class="detailed" id="detailed" name="detailed"  minlength="4" maxlength="200" size="10"/>
+			</div>
+			<div class="buttons">
+				<button class="cancel" >Отмена</button>
+				<button class="ok" >Ok</button>
+				<button class="dell-ok hidden" >Ok</button>
+				<button class="replace hidden" >Ok</button>
+			</div>
+		</form>
+	</div>
+</div>
+</body>
+</html>

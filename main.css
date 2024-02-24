@@ -1,0 +1,324 @@
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/style.css ***!
+  \*********************************************************************/
+body {
+    color: black;
+    font-family: 'Arial', 'Verdana', sans-serif;
+    font-size: 16px;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    margin: 20px auto 0;
+    max-width: 700px;
+    min-width: 320px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.ticket-box {
+    margin: 50px auto 0;
+    width: 900px;
+    min-height: 200px;
+    border: 1px solid black;
+    box-shadow: 0 0 8px 2px #7e7e7e;
+    background:
+            repeating-linear-gradient(
+                    transparent,transparent 25px, black 27px
+            ),
+            repeating-linear-gradient(
+                    90deg,
+                    transparent,transparent 25px, black 27px
+            );
+    opacity: 0.6;
+    border-radius: 5px;
+    /*box-sizing: border-box;*/
+}
+
+.add-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 180px;
+    height: 45px;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0 0 8px 2px #7e7e7e;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.tickets-list {
+    min-width: 0;
+    display: flex;
+    margin: 30px;
+    /*border: 1px solid black;*/
+    /*background-color: white;*/
+    /*border-radius: 3px;*/
+    flex-direction: column;
+}
+
+.ticket {
+    display: flex;
+    float: right;
+    margin-bottom: -1px;
+    flex-direction: row;
+
+    position: relative;
+    list-style-type: none;
+    /*width: 80%;*/
+    /*width: 500px;*/
+    min-height: 50px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/*.checkbox {*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    background-color: white;*/
+/*    border-radius: 50%;*/
+/*    vertical-align: middle;*/
+/*    border: 1px solid black;*/
+/*    appearance: none;*/
+/*    -webkit-appearance: none;*/
+/*    outline: none;*/
+/*    cursor: pointer;*/
+/*}*/
+
+.custom-checkbox input {
+    display: none;
+}
+
+.custom-checkbox span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-top: 7px;
+    border: 2px solid black;
+    margin-left: 10px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.custom-checkbox:hover span,
+.custom-checkbox input:checked + span {
+    /*border: 3px solid #43D8B0;*/
+}
+
+.custom-checkbox input:checked + span:before {
+    content: "✔";
+}
+
+
+
+.task {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    width: 300px;
+    flex-grow: 1;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    z-index: 10000;
+    cursor: pointer;
+}
+
+.title {
+    word-break:break-all;
+    cursor: pointer;
+}
+
+.text {
+    box-sizing: border-box;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    word-break:break-all;
+}
+
+.date {
+    /*display: flex;*/
+    margin-top: 12px;
+    font-size: 18px;
+    margin-right: 30px;
+    margin-left: 70px;
+}
+
+.pencil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 7px;
+    border: 2px solid black;
+    margin-left: 10px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.delete {
+    align-items: center;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+    border: 2px solid black;
+    margin-left: 10px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+.ticket-form-container {
+    top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    overflow: auto;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.ticket-form {
+    position: relative;
+    width: 500px;
+    min-height: 150px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.ticket-form-header {
+    text-align: center;
+}
+
+.ticket-delete-text {
+    margin-top: 20px;
+    text-align: left;
+}
+
+
+
+.ticket-delete-header {
+    margin: 20px;
+    text-align: center;
+}
+
+.short-description-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.short {
+    margin-top: 15px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.short-label {
+    text-align: left;
+}
+
+.detailed-label {
+    text-align: left;
+}
+
+.detailed-description-container {
+    margin-bottom: 15px;
+}
+
+.detailed {
+    margin-top: 15px;
+    height: 60px;
+    font-size: 20px;
+}
+
+
+
+
+
+.buttons {
+    width: 98%;
+    display: flex;
+    /*position: absolute;*/
+    justify-content: right;
+    margin-top: 20px;
+    /*margin: 20px;*/
+    bottom: 0;
+}
+
+.cancel {
+    display: flex;
+    text-align: center;
+    /*height: 20px;*/
+    /*width: 30px;*/
+    padding: 10px;
+    /*right: 10px;*/
+    bottom: 10px;
+    margin-right: 20px;
+    /*position: absolute;*/
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.ok {
+    /*position: absolute;*/
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.dell-ok {
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.replace {
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+
+/*# sourceMappingURL=main.css.map*/
