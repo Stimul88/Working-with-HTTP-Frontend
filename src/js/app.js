@@ -9,7 +9,8 @@ const sendTicket = new SendTicket();
 const changeTicket = new ChangeTicket();
 
 
-const server ='http://localhost:8080/'
+// const server ='http://localhost:8080/'
+const server ='https://working-with-http.onrender.com/'
 
 document.addEventListener("DOMContentLoaded", () => {
   const xhr = new XMLHttpRequest();

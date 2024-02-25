@@ -2,7 +2,8 @@ import GetAllTickets from './GetAllTickets';
 
 const getAllTickets = new GetAllTickets();
 
-const server ='http://localhost:8080/'
+// const server ='http://localhost:8080/'
+const server ='https://working-with-http.onrender.com/'
 
 export default class SendTicket {
   constructor() {
