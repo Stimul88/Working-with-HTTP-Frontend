@@ -264,7 +264,8 @@ __webpack_require__.r(__webpack_exports__);
 
 const getAllTickets = new _GetAllTickets__WEBPACK_IMPORTED_MODULE_0__["default"]();
 
-const server ='http://localhost:8080/'
+// const server ='http://localhost:8080/'
+const server ='https://working-with-http.onrender.com/'
 
 class SendTicket {
   constructor() {
@@ -429,7 +430,8 @@ const sendTicket = new _SendTicket__WEBPACK_IMPORTED_MODULE_2__["default"]();
 const changeTicket = new _ChangeTicket__WEBPACK_IMPORTED_MODULE_3__["default"]();
 
 
-const server ='http://localhost:8080/'
+// const server ='http://localhost:8080/'
+const server ='https://working-with-http.onrender.com/'
 
 document.addEventListener("DOMContentLoaded", () => {
   const xhr = new XMLHttpRequest();
