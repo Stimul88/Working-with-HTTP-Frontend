@@ -376,7 +376,7 @@ class SendTicket {
 
     xhr.open('PATCH', `${server}?method=replaceTicket` + '&id=' + idNumber.textContent)
     xhr.send(body);
-    location.reload();
+    // location.reload();
   }
 
   replaceStatus (ticket) {
@@ -399,7 +399,7 @@ class SendTicket {
 
     xhr.open('PATCH', `${server}?method=replaceStatus` + '&id=' + idNumber.textContent)
     xhr.send(body);
-    location.reload();
+    // location.reload();
   }
 }
 
@@ -429,11 +429,12 @@ const sendTicket = new _SendTicket__WEBPACK_IMPORTED_MODULE_2__["default"]();
 const changeTicket = new _ChangeTicket__WEBPACK_IMPORTED_MODULE_3__["default"]();
 
 
-const server ='http://localhost:8080/?method='
+const server ='http://localhost:8080/'
 
 document.addEventListener("DOMContentLoaded", () => {
   const xhr = new XMLHttpRequest();
-  xhr.open("GET", `${server}allTickets`);
+  xhr.open("GET", `${server}?method=allTickets`);
+
 
   xhr.addEventListener('load', () => {
     if (xhr.status >= 200 && xhr.status < 300) {
@@ -454,6 +455,7 @@ document.addEventListener("DOMContentLoaded", () => {
 sendTicket.init()
 addTicket.init()
 changeTicket.init()
+
 
 /***/ })
 
