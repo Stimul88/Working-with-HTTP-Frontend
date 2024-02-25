@@ -9,11 +9,12 @@ const sendTicket = new SendTicket();
 const changeTicket = new ChangeTicket();
 
 
-const server ='http://localhost:8080/?method='
+const server ='http://localhost:8080/'
 
 document.addEventListener("DOMContentLoaded", () => {
   const xhr = new XMLHttpRequest();
-  xhr.open("GET", `${server}allTickets`);
+  xhr.open("GET", `${server}?method=allTickets`);
+
 
   xhr.addEventListener('load', () => {
     if (xhr.status >= 200 && xhr.status < 300) {

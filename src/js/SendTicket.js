@@ -114,7 +114,7 @@ export default class SendTicket {
 
     xhr.open('PATCH', `${server}?method=replaceTicket` + '&id=' + idNumber.textContent)
     xhr.send(body);
-    location.reload();
+    // location.reload();
   }
 
   replaceStatus (ticket) {
@@ -137,7 +137,7 @@ export default class SendTicket {
 
     xhr.open('PATCH', `${server}?method=replaceStatus` + '&id=' + idNumber.textContent)
     xhr.send(body);
-    location.reload();
+    // location.reload();
   }
 }
 
