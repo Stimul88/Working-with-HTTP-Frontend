@@ -377,7 +377,7 @@ class SendTicket {
 
     xhr.open('PATCH', `${server}?method=replaceTicket` + '&id=' + idNumber.textContent)
     xhr.send(body);
-    // location.reload();
+    location.reload();
   }
 
   replaceStatus (ticket) {
