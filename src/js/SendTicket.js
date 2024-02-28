@@ -114,8 +114,22 @@ export default class SendTicket {
     }
 
     xhr.open('PATCH', `${server}?method=replaceTicket` + '&id=' + idNumber.textContent)
+
+
+    xhr.addEventListener('load', () => {
+      if (xhr.status >= 200 && xhr.status < 300) {
+        try {
+          const data = JSON.parse(xhr.responseText);
+
+          getAllTickets.getTickets(data)
+        } catch (e) {
+          console.error(e);
+        }
+        location.reload();
+      }
+    });
+
     xhr.send(body);
-    location.reload();
   }
 
   replaceStatus (ticket) {
@@ -138,7 +152,6 @@ export default class SendTicket {
 
     xhr.open('PATCH', `${server}?method=replaceStatus` + '&id=' + idNumber.textContent)
     xhr.send(body);
-    // location.reload();
   }
 }
 

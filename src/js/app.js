@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   xhr.open("GET", `${server}?method=allTickets`);
 
 
+
   xhr.addEventListener('load', () => {
     if (xhr.status >= 200 && xhr.status < 300) {
       try {
@@ -27,11 +28,15 @@ document.addEventListener("DOMContentLoaded", () => {
       } catch (e) {
         console.error(e);
       }
+
     }
   });
 
   xhr.send();
+
 })
+
+
 
 sendTicket.init()
 addTicket.init()

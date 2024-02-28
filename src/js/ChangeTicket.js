@@ -91,6 +91,7 @@ export default class ChangeTicket {
     replace.addEventListener('click', e => {
       e.preventDefault()
       sendTicket.replaceOk((ticket))
+      ticketFormContainer.classList.add('hidden');
     })
   }
 }
